@@ -1,0 +1,976 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+@font-face {
+    font-family: "Arial", sans-serif;
+    src: url("/fonts/ARIALBD.TTF") format("ttf"),
+        url("/fonts/ARIALBD.TTF") format("ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+/*============== nav ==================*/
+nav {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+nav a {
+    color: rgba(0, 0, 0, 1);
+    font-family: "Inter", serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24.2px;
+    text-align: left;
+}
+
+.mid-section ul {
+    display: flex;
+    gap: 2rem;
+}
+
+.right-section {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    padding: 22px 32px;
+    border-radius: 40px;
+    border: none;
+    background-color: rgba(154, 20, 79, 1);
+    color: white;
+    font-family: "Inter", serif;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 5rem;
+}
+
+/* hamburger */
+.ham-menu {
+    height: 50px;
+    width: 50px;
+    margin-left: auto;
+    position: relative;
+    display: none;
+}
+
+.ham-menu span {
+    height: 3px;
+    width: 70%;
+    background-color: black;
+    border-radius: 25px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 0.3s ease;
+}
+
+.ham-menu span:nth-child(1) {
+    top: 25%
+}
+
+.ham-menu span:nth-child(3) {
+    top: 75%;
+}
+
+.ham-menu.active span:nth-child(1) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.ham-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.ham-menu.active span:nth-child(3) {
+    top: 50%;
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* end of hamburger */
+
+
+
+
+/*============= end of nav ===============*/
+
+/*============= hero-section ===============*/
+.hero-section {
+    background-color: rgba(235, 233, 218, 1);
+    width: 100%;
+}
+
+.hero-text-img {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 100px 1rem;
+    display: flex;
+    gap: 30px;
+}
+
+.hero-text p:nth-child(1) {
+    font-family: "Arial", sans-serif;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 73.59px;
+    letter-spacing: -0.042em;
+    text-align: left;
+}
+
+.hero-text p:nth-child(2) {
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 29.05px;
+    letter-spacing: -0.04em;
+    text-align: left;
+}
+
+/*============= end of hero-section ===============*/
+
+
+/*============= trusted by ===============*/
+.trusted-by {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1rem 1rem 3rem 1rem;
+
+}
+
+.trust {
+    color: rgba(60, 55, 55, 1);
+    font-family: "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57.5px;
+    letter-spacing: -0.03em;
+    text-align: center;
+}
+
+.trusted-logo {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 4.5rem;
+    padding-top: 1rem;
+}
+
+/*============= end of trusted by ===============*/
+
+/*============= Radish===============*/
+.radish-background {
+    background: rgba(240, 243, 245, 1);
+    width: 100%;
+}
+
+.radish-text {
+    max-width: 1340px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.radish-how {
+    font-family: "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57.5px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: rgba(60, 55, 55, 1);
+}
+
+.radish-boxs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.box {
+    box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.25);
+    width: 320px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 0 1.5rem;
+}
+
+.box p:nth-child(2) {
+    font-family: "Inter", serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24.2px;
+    letter-spacing: -0.04em;
+    text-align: center;
+    color: rgba(60, 55, 55, 1);
+}
+
+.box p:nth-child(3) {
+    font-family: "Inter", serif;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21.78px;
+    letter-spacing: -0.06em;
+    text-align: center;
+    color: rgba(60, 55, 55, 1);
+}
+
+/*============= end of Radish===============*/
+
+/*============= testimonial-background===============*/
+.testimonial-background {
+    background: rgba(254, 250, 239, 1);
+}
+
+.testimonial {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.test {
+    font-family: "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57.5px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: rgba(60, 55, 55, 1);
+}
+
+.test-reviews {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+
+.stars {
+    width: 0;
+    height: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.review1,
+.review2 {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    box-shadow: 4px 4px 6px 4px rgba(0, 0, 0, 0.25);
+    width: 800px;
+    height: 550px;
+    padding: 4rem 1rem 0 1rem;
+    border-radius: 20px;
+}
+
+.review1 p,
+.review2 p {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 43.57px;
+    letter-spacing: -0.06em;
+    text-align: left;
+    color: rgba(60, 55, 55, 1);
+}
+
+.test-id {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.slidding-arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding-top: 3rem;
+}
+
+.arrow1,
+.arrow2 {
+    height: 70px;
+    width: 70px;
+    border-radius: 35px;
+    border: solid black 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/*======== end of testimonial-background===============*/
+
+/*============== frequently asked questions ============== */
+.fqa {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.fq1 {
+    display: flex;
+    gap: 53rem;
+}
+
+.fq2 {
+    display: flex;
+    gap: 45rem;
+}
+
+.fq3,
+.fq6,
+.fq8 {
+    display: flex;
+    gap: 44rem;
+}
+
+.fq4,
+.fq5 {
+    display: flex;
+    gap: 38rem;
+}
+
+.fq7 {
+    display: flex;
+    gap: 47rem;
+}
+
+.fqa-ques,
+.fqa-ques1 {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 50px;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgba(60, 55, 55, 1);
+    color: rgba(60, 55, 55, 1);
+}
+
+.fqa-text {
+    font-family: "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 57.5px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: rgba(60, 55, 55, 1);
+}
+
+.fqa-ques1 {
+    border-bottom: none;
+}
+
+.fqa-ques1 a {
+    text-decoration: underline;
+    color: rgba(60, 55, 55, 1);
+}
+
+/*============== end of frequently asked questions =============== */
+
+/*================= last main ======================  */
+.last-main {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 4rem;
+}
+
+.text-1 {
+    font-family: "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 26px;
+    letter-spacing: -3px;
+    text-align: center;
+    color: rgba(60, 55, 55, 1);
+}
+
+.text-2 {
+    font-family: "Inter", serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 54px;
+    text-align: center;
+}
+
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.social1,
+.social2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: black;
+    border: 1px solid black;
+    border-radius: 8px;
+    width: 250px;
+    height: 76px;
+    color: white;
+}
+
+.social1 div p:nth-child(1) {
+    font-family: "Inter", serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.social2 div p:nth-child(1) {
+    font-family: "Inter", serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.social1 div p:nth-child(2) {
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 5px;
+    text-align: left;
+}
+
+.social2 div p:nth-child(2) {
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1px;
+    text-align: left;
+}
+
+.footer-background {
+    background-color: rgba(254, 250, 239, 1);
+}
+
+.footer {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    justify-content: center;
+    gap: 60px;
+    padding: 2rem 0;
+}
+
+.foot1 p,
+.foot2 p,
+.foot3 p,
+.foot4 p,
+.foot5 p {
+    font-family: "Inter", serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    text-align: left;
+    color: rgba(60, 55, 55, 1);
+}
+
+.foot-head p {
+    font-family: "Inter", serif;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 54px;
+}
+
+.medias {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+/*================= end of last main ======================  */
+
+
+/* ======================== */
+/* MEDIA QUERY */
+/* ======================== */
+/*=========== max-width:1200px ==============*/
+@media screen and (max-width:1200px) {
+    .hero-img img {
+        width: 550px;
+    }
+}
+
+/*=========== max-width:1200px ==============*/
+/*=========== max-width:1140px ==============*/
+@media screen and (max-width:1140px) {
+
+    .radish-boxs {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .review1,
+    .review2 {
+        width: 800px;
+        height: 700px;
+    }
+
+    .fq1,
+    .fq2 {
+        display: flex;
+        gap: 40rem;
+    }
+
+}
+
+/*=========== end of max-width:1140px ==============*/
+
+/*=========== max-width:1030px ==============*/
+@media screen and (max-width:1030px) {
+    .ham-menu {
+        height: 50px;
+        width: 50px;
+        margin-left: auto;
+        position: relative;
+        display: initial;
+    }
+
+    .nav-menu {
+        background-color: gray;
+        height: 100vh;
+        width: 100%;
+        max-width: 500px;
+        position: fixed;
+        top: 0;
+        display: flex;
+        right: -550px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .nav-menu.active {
+        right: 0;
+    }
+
+    .nav-menu ul,
+    .nav-menu .right-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+        gap: 1rem;
+    }
+
+    .hero-text-img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        text-align: center;
+    }
+
+    .hero-text p:nth-child(1) {
+        text-align: center;
+    }
+
+    .hero-text p:nth-child(2) {
+        text-align: center;
+    }
+
+    .hero-text {
+        text-align: center;
+    }
+
+    .hero-img img {
+        max-width: 100%;
+    }
+
+    .fqa-ques {
+        display: flex;
+        gap: 30rem;
+    }
+
+    .last-main {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        gap: 4rem;
+    }
+}
+
+/*=========== end of max-width:1030px ==============*/
+
+/*=========== max-width:786px ==============*/
+@media screen and (max-width:786px) {
+    .test-reviews {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+    }
+
+    .review1,
+    .review2 {
+        width: 500px;
+        height: 600px;
+    }
+
+    .fqa-ques {
+        display: flex;
+        gap: 16rem;
+    }
+}
+
+/*=========== end of max-width:786px ==============*/
+
+/*===========  max-width:550px ==============*/
+@media screen and (max-width:550px) {
+
+    .review1,
+    .review2 {
+        width: 300px;
+        height: 800px;
+    }
+
+    .stars {
+        width: 0;
+        height: 0;
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .fqa-ques {
+        display: flex;
+        gap: 9rem;
+    }
+
+    .socials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .last-main-pics img {
+        max-width: 100%;
+    }
+
+    .text-1 {
+        font-family: "Arial", sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 50px;
+        letter-spacing: -3px;
+        text-align: center;
+        color: rgba(60, 55, 55, 1);
+    }
+
+    .text-2 {
+        font-family: "Inter", serif;
+        font-size: 25px;
+        font-weight: 500;
+        line-height: 50px;
+        text-align: center;
+    }
+}
+
+/*=========== end of max-width:550px ==============*/
+
+
+/*=========== max-width:440px ==============*/
+@media screen and (max-width:440px) {
+    .left-section img {
+        max-width: 100%;
+    }
+
+    .hero-text p:nth-child(1) {
+        font-family: "Arial", sans-serif;
+        font-size: 46px;
+        font-weight: 700;
+        line-height: 52.9px;
+        letter-spacing: -0.02em;
+        text-align: center;
+    }
+
+    .hero-text p:nth-child(2) {
+        font-family: "Inter", serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 19.36px;
+        letter-spacing: -0.04em;
+        text-align: center;
+    }
+
+    .trust {
+        color: rgba(60, 55, 55, 1);
+        font-family: "Arial", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 36.8px;
+        letter-spacing: -0.03em;
+        text-align: center;
+    }
+
+    .radish-how {
+        font-family: "Arial", sans-serif;
+        font-size: 32px;
+        font-weight: 700;
+        line-height: 36.8px;
+        letter-spacing: -0.03em;
+        text-align: center;
+    }
+
+    .fqa-ques {
+        display: flex;
+        gap: 9rem;
+    }
+
+    .fqa-ques,
+    .fqa-ques1 {
+        font-family: "Inter", serif;
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .fqa-text {
+        font-family: "Arial", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 35px;
+        letter-spacing: -0.03em;
+        text-align: center;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: center;
+        padding-left: 1rem;
+    }
+
+
+}
+
+/*=========== end of max-width:440px ==============*/
+
+
+/*=========== end of max-width:350px ==============*/
+@media screen and (max-width:350px) {
+    .stars {
+        width: 0;
+        height: 0;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        align-items: center;
+        padding-bottom: 6rem;
+    }
+
+    .review1,
+    .review2 {
+        width: 200px;
+        height: 40rem;
+    }
+
+    .test-id {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .test {
+        font-family: "Arial", sans-serif;
+        font-size: 25px;
+        font-weight: 700;
+        line-height: 36.8px;
+        letter-spacing: -0.03em;
+        text-align: center;
+    }
+
+    .review1 p,
+    .review2 p {
+        font-family: "Inter", serif;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 20px;
+        letter-spacing: -0.04em;
+        text-align: left;
+        color: rgba(60, 55, 55, 1);
+    }
+
+    .fqa-ques {
+        display: flex;
+        gap: 3rem;
+    }
+
+    .social1,
+    .social2 {
+        width: 200px;
+        height: 76px;
+    }
+
+}
+
+/*=========== max-width:350px ==============*/
+
+@media screen and (max-width:250px) {
+    .hero-text p:nth-child(1) {
+        font-family: "Arial", sans-serif;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 52.9px;
+        letter-spacing: -0.02em;
+        text-align: center;
+    }
+
+    .btn {
+        padding: 15px 20px;
+        border-radius: 30px;
+        border: none;
+        background-color: rgba(154, 20, 79, 1);
+        color: white;
+        font-family: "Inter", serif;
+        font-size: 16px;
+        font-weight: 700;
+        line-height: 19.36px;
+        text-align: center;
+    }
+
+    .box {
+        width: 320px;
+        height: 450px;
+    }
+
+    .stars {
+        width: 0;
+        height: 0;
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        padding-bottom: 20rem;
+    }
+
+    .review1,
+    .review2 {
+        width: 200px;
+        height: 70rem;
+    }
+
+    .arrow1,
+    .arrow2 {
+        height: 50px;
+        width: 50px;
+        border-radius: 30px;
+    }
+
+    .fqa-ques {
+        display: flex;
+        gap: 1rem;
+    }
+
+    .fqa-ques,
+    .fqa-ques1 {
+        font-family: "Inter", serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 30px;
+        text-align: left;
+    }
+
+    .social1,
+    .social2 {
+        width: 160px;
+        height: 76px;
+    }
+
+    .social1 div p:nth-child(1),
+    .social2 div p:nth-child(1) {
+        font-family: "Inter", serif;
+        font-size: 10px;
+        font-weight: 400;
+        line-height: 20px;
+        text-align: left;
+    }
+
+    .social1 div p:nth-child(2),
+    .social2 div p:nth-child(2) {
+        font-family: "Inter", serif;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 5px;
+        text-align: left;
+    }
+
+    .foot1 p,
+    .foot2 p,
+    .foot3 p,
+    .foot4 p,
+    .foot5 p {
+        font-family: "Inter", serif;
+        font-size: 12px;
+        font-weight: 400;
+        line-height: 30px;
+        text-align: left;
+        color: rgba(60, 55, 55, 1);
+    }
+
+    .foot-head p {
+        font-family: "Inter", serif;
+        font-size: 13px;
+        font-weight: 600;
+        line-height: 24px;
+        text-align: left;
+        /* text-align: center; */
+    }
+}
+
+/*=========== end of max-width:250px ==============*/
